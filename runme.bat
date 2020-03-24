@@ -12,6 +12,6 @@ taskkill /IM chrome.exe -F
 ::powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/FearOffTheFart/Bash/master/clownlaugh.mp3 -OutFile %temp%\asd.mp3"
 ::%temp%\asd.mp3
 del %temp%\asd.mp3
-del virus2.bat
+del runme.bat
 
 
