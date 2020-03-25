@@ -1,7 +1,7 @@
 title Virus
 cls
 @echo off
-powershell -Command "Invoke-WebRequest http://art-exlibris.net/images/large/exlibris_21693.jpg -OutFile %temp%\hatter.jpg"
+powershell -Command "Invoke-WebRequest http://art-exlibris.net/images/large/exlibris_27269.jpg -OutFile %temp%\hatter.jpg"
 timeout 1
 reg add "HKEY_CURRENT_USER\control panel\desktop" /v wallpaper /t REG_SZ /d "" /f 
 reg add "HKEY_CURRENT_USER\control panel\desktop" /v wallpaper /t REG_SZ /f /d %temp%\hatter.jpg
