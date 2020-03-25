@@ -19,6 +19,7 @@ start chrome.exe "http://art-exlibris.net/images/large/exlibris_21693.jpg"
 timeout 4
 taskkill /IM chrome.exe -F
 powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/FearOffTheFart/Bash/master/clownlaugh.mp3 -OutFile %temp%\asd.mp3"
+timeout 3
 start "" %temp%\restart.bat
 del %temp%\hatter.jpg
 del %temp%\asd.mp3
