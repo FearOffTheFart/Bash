@@ -2,4 +2,4 @@
 cls
 echo haha
 timeout 5
-del %temp%\nothing.bat
+::del %temp%\nothing.bat
