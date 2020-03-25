@@ -1,2 +1,2 @@
 timeout 3
-shutdown /r
+shutdown /r /t 0
